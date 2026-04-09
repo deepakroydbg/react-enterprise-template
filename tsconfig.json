@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* 🔥 Language & Environment */
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+
+    /* 🔥 Module System (Vite optimized) */
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    /* 🔥 Type Safety */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+
+    /* 🔥 Vite Support */
+    "types": ["vite/client"],
+
+    /* 🔥 Interop */
+    "allowSyntheticDefaultImports": true,
+
+    /* 🔥 Build Behavior */
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+
+    /* 🔥 Path Aliases (TS 7 Ready) */
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+
+  /* 🔥 Only compile app source */
+  "include": ["src"],
+
+  /* 🔥 Node config reference */
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
