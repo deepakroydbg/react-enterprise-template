@@ -7,6 +7,7 @@ export const useUsers = () => {
   return useQuery<User[]>({
     queryKey: [QUERY_KEYS.USERS],
     queryFn: getUsers,
-    initialData: [],
+    placeholderData: [],
+    staleTime: 1000 * 60 * 5,
   });
 };
